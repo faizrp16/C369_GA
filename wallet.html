@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML, CSS, Tutorial, Digital, Wallet">
+  <title>Wallet App</title>
+  <link rel="stylesheet" href="public/style.css" type="text/css">
+  <link rel="icon" type="image/icon" href="img/favico.ico">
+</head>
+
+<body>
+  <div class="bg-blur">
+    <img src="img/body-gr1.png" alt="blur">
+    <img src="img/body-gr2.png" alt="blur">
+  </div>
+
+  <div class="container">
+    <img src="img/gradient1.png" alt="container-blur" class="gloss-one">
+    <img src="img/gradient2.png" alt="container-blur" class="gloss-two">
+
+    <div class="side-bar">
+      <img src="img/sidebar.png" alt="sidebar" class="sidebar-bg">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo">
+        <h2>Compass</h2>
+        <img src="img/icons/sidebar/menu.png" alt="">  
+      </div>
+      <div class="account-name">
+        <h3>Patrick Bateman</h3>
+        <hr>
+      </div>
+
+      <div class="sidebar-menu">
+        <div class="menu-item selected">
+          <div class="block"></div>
+          <img src="img/icons/sidebar/wallet.png" alt="wallet">
+          <p>Wallet</p>
+          <img src="img/icons/sidebar/arrow.png" alt="selected" class="arrow">
+        </div>
+        <a href="Transactions.html" class="menu-item">
+          <img src="img/icons/sidebar/tran.png" alt="transactions">
+          <p>Transactions</p>
+        </a>
+        <a href="dashboard.html" class="menu-item">
+          <img src="img/icons/sidebar/home.png" alt="home">
+          <p>Dashboard</p>
+        </a>
+        <a href="About.html" class="menu-item">
+          <img src="img/icons/sidebar/about.png" alt="about">
+          <p>About</p>
+        </a>
+        <a href="settings.html" class="menu-item">
+          <img src="img/icons/sidebar/support.png" alt="settings">
+          <p>Settings</p>
+        </a>
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      <a href="index.html" class="menu-item">
+        <img src="img/icons/sidebar/logout.png" alt="logout">
+        <h2>Log Out</h2>
+      </a>
+    </div>
+    <div class="topbar">
+      <img src="img/topbar.png" alt="topbar" class="topbar-bg">
+      <div class="topbar-title">
+        <h2>Wallet</h2>
+        <p>July 2024</p>
+      </div>
+
+      <div class="topbar-controls">
+        <img src="img/icons/topbar/msg.png" alt="messages">
+        <div class="notifications">
+          <img src="img/icons/topbar/bell.png" alt="notifications">
+          <div class="circle">
+            <p>4</p>
+          </div>
+        </div>
+        <img src="img/icons/topbar/options.png" alt="options">
+        <img src="img/icons/topbar/pfp.png" alt="profile">
+      </div>
+    </div>
+
+    
+    <div class="window">
+      <div class="directory">
+        <h4>Accounts</h4>
+        <h4>Main Account</h4>
+      </div>
+
+      <div class="card-details">
+        <img src="img/icons/window/card.png" alt="credit-card">
+        <div class="vr"></div>
+        <div class="card-info">
+          <p><strong>Type:</strong> Credit Card</p>
+          <p><strong>Name:</strong> Patrick Bateman</p>
+          <p><strong>Card Number:</strong> 4567 1234 9876 4321</p>
+          <p><strong>CVV:</strong>852</p>
+          <p><strong>Expiration Date:</strong> 05/28</p>
+        </div>
+      </div>
+      <div class="card-status">
+        <div class="status-block first">
+          <h3>Balance:</h3>
+          <img src="img/icons/window/balance.png" alt="balance">
+          <h1>2500</h1>
+        </div>
+        <div class="status-block second">
+          <h3>Deposit:</h3>
+          <img src="img/icons/window/profit.png" alt="profit" class="mini">
+          <h1>+450</h1>
+        </div>
+        <div class="status-block third">
+          <h3>Withdrawals:</h3>
+          <img src="img/icons/window/withdrawal.png" alt="withdrawals" class="mini">
+          <h1>-200</h1>
+        </div>
+      </div>
+
+      <div class="transaction">
+        <div class="choose-account">
+          <label for="account">Choose Account</label>
+          <div class="combobox">
+            <h3>Paul Allen</h3>
+            <img src="img/icons/window/arrow-bottom.png" alt="dropdown">
+          </div>
+        </div>
+        <div class="input-amount">
+          <label for="amount">Amount:</label>
+          <input type="text" id="amount" value="" placeholder="0.00">
+        </div>
+        <div class="btn">
+          <form id="transactionForm">
+            <label for="money">click to send</label>
+            <input type="submit" value="Send Money">
+        </div>
+
+        <script>
+          document.getElementById('transactionForm').addEventListener('submit', function(event) {
+            alert('Successful transaction!');
+          });
+        </script>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
