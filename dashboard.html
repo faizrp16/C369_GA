@@ -8,91 +8,57 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="public/dashboard.css">
+	<link rel="stylesheet" href="public/market.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
 	<title>FinTrack</title>
 </head>
 <body>
-
-
-	<!-- SIDEBAR -->
-	<section id="sidebar">
-		<a href="#" class="brand">
-			<i class='bx bxs-smile'></i>
-			<span class="text">FinTrack</span>
-		</a>
-		<ul class="side-menu top">
-			<li class="active">
-				<a href="#">
-					<i class='bx bxs-dashboard' ></i>
-					<span class="text">Dashboard</span>
-				</a>
-			</li>
-			<li>
-				<a href="/wallet.html">
-					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">Wallet</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
-				</a>
-			</li>
-		</ul>
-		<ul class="side-menu">
-			<li>
-				<a href="/settings.html">
-					<i class='bx bxs-cog' ></i>
-					<span class="text">Settings</span>
-				</a>
-			</li>
-			<li>
-				<a href="/index.html" class="logout">
-					<i class='bx bxs-log-out-circle' ></i>
-					<span class="text">Logout</span>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<!-- SIDEBAR -->
-
-
-
 	<!-- CONTENT -->
 	<section id="content">
 		<!-- NAVBAR -->
-		<nav>
-			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">Categories</a>
-			<form action="#">
-				<div class="form-input">
-					<input type="search" placeholder="Search...">
-					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
-				</div>
-			</form>
-			<input type="checkbox" id="switch-mode" hidden>
-			<label for="switch-mode" class="switch-mode"></label>
-			<a href="#" class="notification">
-				<i class='bx bxs-bell' ></i>
-				<span class="num">8</span>
-			</a>
-			<a href="#" class="profile">
-				<img src="img/people.png">
-			</a>
-		</nav>
+		<header class="header" data-header>
+			<div class="container">
+		
+			  <a href="#" class="logo">
+				<img src="images/logo.svg" width="32" height="32" alt="Cryptex logo">
+				Fintrack
+			  </a>
+		
+			  <nav class="navbar" data-navbar>
+				<ul class="navbar-list">
+		
+				  <li class="navbar-item">
+					<a href="/dashboard.html" class="navbar-link active" data-nav-link>Homepage</a>
+				  </li>
+		
+				  <li class="navbar-item">
+					<a href="/market.html" class="navbar-link" data-nav-link>Market</a>
+				  </li>
+		
+				  <li class="navbar-item">
+					<a href="/subscription.html" class="navbar-link" data-nav-link>Subscriptions</a>
+				  </li>
+		
+				  <li class="navbar-item">
+					<a href="/settings.html" class="navbar-link" data-nav-link>Settings</a>
+				  </li>
+		
+				</ul>
+			  </nav>
+		
+			  <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+				<span class="line line-1"></span>
+				<span class="line line-2"></span>
+				<span class="line line-3"></span>
+			  </button>
+		
+			  <a href="/wallet.html" class="btn btn-outline">Wallet</a>
+		
+			</div>
+		  </header>
 		<!-- NAVBAR -->
 
 		<!-- MAIN -->
@@ -120,14 +86,14 @@
 				<li>
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
-						<h3>1020</h3>
-						<p>New Order</p>
+						<h3>10 Aug</h3>
+						<p>Next payment</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bxs-group' ></i>
 					<span class="text">
-						<h3>5</h3>
+						<h3>6</h3>
 						<p>Subscription</p>
 					</span>
 				</li>
@@ -159,7 +125,7 @@
 						<tbody>
 							<tr>
 								<td>
-									<img src="img/people.png">
+									<img src="images/lawrence_wong.jpg">
 									<p>Lawrence Wong</p>
 								</td>
 								<td>10-07-2024</td>
@@ -167,7 +133,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png">
+									<img src="images/kurt_tay.png">
 									<p>Kurt Tay</p>
 								</td>
 								<td>16-07-2024</td>
@@ -175,7 +141,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png">
+									<img src="images/halimah_yacob.jpg">
 									<p>Halimah Yacob</p>
 								</td>
 								<td>24-07-2024</td>
@@ -183,7 +149,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png">
+									<img src="images/simonboy.jpg">
 									<p>Simonboy</p>
 								</td>
 								<td>29-07-2024</td>
@@ -191,7 +157,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png">
+									<img src="images/jade_rasif.jpg">
 									<p>Jade Rasif</p>
 								</td>
 								<td>14-06-2024</td>
@@ -236,6 +202,6 @@
 	<!-- CONTENT -->
 	
 
-	<script src="public/script.js"></script>
+	<script src="public/dashboard.js"></script>
 </body>
 </html>

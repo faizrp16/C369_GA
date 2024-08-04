@@ -1,0 +1,187 @@
+<!-- 
+Responsive HTML Table With Pure CSS - Web Design/UI Design
+
+Code written by:
+👨🏻‍⚕️ Coding Design (Jeet Saru)
+
+> You can do whatever you want with the code. However if you love my content, you can **SUBSCRIBED** my YouTube Channel.
+
+🌎link: www.youtube.com/codingdesign 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FinTrack</title>
+    <link rel="stylesheet" href="public/subscription.css">
+    <link rel="stylesheet" href="public/market.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">
+            <img src="images/logo.svg" width="32" height="32" alt="Cryptex logo">
+            Fintrack
+          </a>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="/dashboard.html" class="navbar-link" data-nav-link>Homepage</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="/market.html" class="navbar-link" data-nav-link>Market</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="/subscription.html" class="navbar-link active" data-nav-link>Subscriptions</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="/settings.html" class="navbar-link" data-nav-link>Settings</a>
+              </li>
+    
+            </ul>
+          </nav>
+    
+          <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+    
+          <a href="/wallet.html" class="btn btn-outline">Wallet</a>
+    
+        </div>
+      </header>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Subscriptions</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Application <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Type <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> <img src="images/Netflix_icon.svg.png" alt="">Netflix</td>
+                        <td> Entertainment </td>
+                        <td> 17 July, 2024 </td>
+                        <td>
+                            <p class="status delivered">Completed</p>
+                        </td>
+                        <td> <strong> $10.90 </strong></td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="images/disney_plus_icon_161064.png" alt=""> Disney+ </td>
+                        <td> Entertainment </td>
+                        <td> 20 July, 2024 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$8.50</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="images/spotify.png" alt=""> Spotify </td>
+                        <td> Music </td>
+                        <td> 14 Aug, 2024 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$10.40</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="images/hulu.png" alt=""> Hulu </td>
+                        <td> Entertainment </td>
+                        <td> 25 May, 2024 </td>
+                        <td>
+                            <p class="status delivered">Completed</p>
+                        </td>
+                        <td> <strong>$9.70</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="images/straitstimes.png" alt=""> Straits Times </td>
+                        <td> News </td>
+                        <td> 23 Apr, 2024 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$4.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="images/disney_plus_icon_161064.png" alt=""> Disney+ </td>
+                        <td> Entertainment </td>
+                        <td> 23 Apr, 2024 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$8.50</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="images/Netflix_icon.svg.png" alt=""> Netflix </td>
+                        <td> Entertainment </td>
+                        <td> 20 May, 2024 </td>
+                        <td>
+                            <p class="status delivered">Completed</p>
+                        </td>
+                        <td> <strong>$10.90</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="images/amazon_prime_video.jpg" alt=""> Amazon Prime Video </td>
+                        <td> Entertainment </td>
+                        <td> 30 Feb, 2024 </td>
+                        <td>
+                            <p class="status delivered">Completed</p>
+                        </td>
+                        <td> <strong>$7.70</strong> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="public/subscription.js"></script>
+
+</body>
+
+</html>
